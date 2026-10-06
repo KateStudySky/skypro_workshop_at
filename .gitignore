@@ -3,6 +3,14 @@ __pycache__/
 *.py[codz]
 *$py.class
 
+# Allure
+allure-files/
+allure-report/
+
+# IDE
+.idea/
+.vscode/
+
 # C extensions
 *.so
 
