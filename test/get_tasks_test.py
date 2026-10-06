@@ -1,6 +1,5 @@
 import allure
 import requests
-
 from config import BASE_URL
 
 

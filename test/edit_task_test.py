@@ -1,8 +1,8 @@
 import allure
 import requests
 from faker import Faker
-
 from config import BASE_URL
+
 
 fake = Faker()
 
