@@ -5,6 +5,7 @@ from config import BASE_URL
 
 @allure.title("Получение списка задач")
 @allure.story("CRUD: Read")
+@allure.severity(allure.severity_level.BLOCKER)
 def test_get_tasks():
     with allure.step("Отправить GET-запрос"):
         response = requests.get(BASE_URL)

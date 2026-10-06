@@ -9,6 +9,7 @@ fake = Faker()
 
 @allure.title("Редактирование задачи")
 @allure.story("CRUD: Update")
+@allure.severity(allure.severity_level.NORMAL)
 def test_edit():
     with allure.step("Создать задачу"):
         body = {"title": fake.sentence(), "completed": False}
