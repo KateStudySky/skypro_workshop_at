@@ -25,11 +25,13 @@
 - Склонировать репозиторий
 - Установить зависимости: `pip install -r requirements.txt`
 - Создать ветку `фамилия_ддмм`, например `ivanov_2305` и переключиться на нее: `git checkout -b ivanov_2305`
-- Написать тест — один новый файл в папке `test/`
-- Запустить тест: `pytest test/test_ivanov_completed.py`
+- Написать тест — один новый файл в папке `test/`, например `test/ivanov_completed_test.py`
+- Запустить тесты: `pytest -s -v`
+- Добавить файл в staging: `git add test/ivanov_completed_test.py`
+- Сделать коммит: `git commit -m "Add test for task"`
 - Запушить ветку: `git push -u origin ivanov_2305`
 - Открыть вкладку **Actions** и дождаться прогона
-- Создать pull request в `main` и приложить ссылку на `allure-report`
+- Создать pull request в `main` и приложить ссылку на прогон в Actions по своей ветке
 
 ## Правила
 
