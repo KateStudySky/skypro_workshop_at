@@ -26,4 +26,4 @@ def test_edit():
     with allure.step("Получить задачу и проверить новый title"):
         response = requests.get(f"{BASE_URL}{task_id}")
         assert response.status_code == 200
-        assert response.json()["completed"] == True
+        assert response.json()["completed"]
