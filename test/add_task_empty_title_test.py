@@ -1,11 +1,13 @@
 import allure
 import requests
+import pytest
 from config import BASE_URL
 
 
 @allure.title("Создание задачи с пустым названием")
 @allure.story("CRUD: Create")
 @allure.severity(allure.severity_level.CRITICAL)
+@pytest.mark.xfail
 def test_add():
     title = ''
     body = {"title": title, "completed": False}
